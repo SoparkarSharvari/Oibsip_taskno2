@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="TributePage.css" >
+        
+    </head>
+    <body>
+<div id="Heading">
+    <h1 style="text-align: center; font-style: italic; font-size: 40px;">Vincent van Gogh</h1>
+    <marquee style="text-align:center; font-style: italic; font-size: 30px;" direction="right" hspace="28%"> ~ A Tribute to the Post-Impressionist Painter ~</marquee>
+</div>
+
+<div class="introductionDiv">
+    <div class="introduction" style="  width: 150%;">
+        <p style="text-align: justify;">Vincent van Gogh was a Dutch post-impressionist painter who lived from 1853 to 1890. He is known for his bold use of color and expressive brushstrokes, and is considered to be one of the most important artists of all time.</p>
+    </div>
+    <div class="introductionImage">
+       <center> <img src="file:///Users/sharvarisoparkar/Downloads/Self-Portrait-Vincent-van-Gogh.webp" width="250px"></center>
+    </div>
+</div>
+
+<div class="introductionDiv section1" style="height: 400px;;">
+    <div class="introduction " id="section1" style="  width: 150%; height: 100%;">
+        <h1  style="text-align: center;">Early Life <br>and <br>Career </h1>
+    </div>
+    <div class="introductionImage section1">
+        <p>Vincent van Gogh was born in the Netherlands in 1853. He had a troubled childhood and struggled with mental illness throughout his life. He started his career as an art dealer, but soon decided to become an artist himself. He studied art in Belgium and France, and was influenced by the works of the impressionists and post-impressionists.</p>
+    </div>
+</div>
+
+<div class="introductionDiv section2">
+    <div class="introduction ">
+        <p>Vincent van Gogh's artistic style was characterized by his bold use of color and expressive brushstrokes. He created some of the most famous paintings in the history of art, including "Starry Night," "Sunflowers," and "The Potato Eaters."
+            <br><br>
+        Even though Vincent van Gogh died in 1890 at the age of 37, his legacy lives on. He is remembered as one of the greatest painters of all time, and his works continue to inspire artists and art lovers alike.</p>
+    </div>
+    <div class="introductionImage section2" id="section2" style="  width: 150%;">
+        <h1 style="text-align: center;">Artistic Style <br>and<br> Legacy</h1>
+    </div>
+</div>
+<hr>
+<div class="imageHeader">
+    <p style="margin:40px"> Vincent van Gogh's paintings are known for their bold colors, expressive brushstrokes, and emotional intensity. Many of his works have deep meaning and symbolism, reflecting the artist's personal struggles and experiences. Here are some examples of the meaning behind some of van Gogh's most famous paintings:</p>
+</div>
+<div class="imageSlide1">
+    <div class="imageSlide"align=center style="width: 95%;margin-left: 30px;" >
+    <img class="mySlides" src="file:///Users/sharvarisoparkar/Downloads/The-Night-Cafe.webp" style="width:98% ; " >
+    <img class="mySlides" src="file:///Users/sharvarisoparkar/Downloads/Starry-Night-canvas.webp" style="width:98%">
+    <img class="mySlides" src="file:///Users/sharvarisoparkar/Downloads/The-Potato-Eaters.webp" style="width:98%">
+    <img class="mySlides" src="file:///Users/sharvarisoparkar/Downloads/Detail-Sunflowers.webp" style="width:38%">
+    <h3 id="conclusion">Conclusion</h3>
+    <p id="conclusionContents">
+        Vincent van Gogh's life and work continue to fascinate people all over the world. His unique style and powerful imagery have made him an enduring icon of the art world, and his legacy is sure to inspire generations to come.
+    </p>
+
+        <div class="infoDiv" style="width: 600px;padding: 10px;">
+            <p id="img1" ></p>
+        </div>
+    <button class="buttonleft" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="buttonright" onclick="plusDivs(1)">&#10095;</button>
+    
+</div>
+</div>
+
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+        function showDivs(n) {
+            debugger
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var y = document.getElementById("img1");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+        if(slideIndex==1){
+            y.innerHTML="<h2>Café Terrace at Night</h2> - This painting is a reflection of Vincent van Gogh's love of life and social connection. The warm colors and cozy atmosphere of the café are seen as a celebration of human interaction and community."
+        }
+        if(slideIndex==2){
+            y.innerHTML="<h2>Starry Night</h2> - This painting is a powerful expression of Vincent van Gogh's feelings of isolation and turmoil. The swirling stars and clouds are thought to represent the artist's inner turmoil, while the small town below symbolizes the peaceful world outside. The cypress tree in the foreground is often seen as a symbol of death and resurrection."
+        }
+        if(slideIndex==3){
+            y.innerHTML=" <h2>The Potato Eaters</h2> - This painting is a somber depiction of the harsh lives of peasants in the Dutch countryside. The dark tones and realistic style reflect Vincent van Gogh's sympathy for the working class and his belief in the importance of social justice."}
+        if(slideIndex==4){
+            
+            y.innerHTML="<h2>Sunflowers</h2> - Vincent van Gogh painted several versions of this iconic series of paintings. The sunflowers are thought to represent happiness, friendship, and loyalty. The bright colors and lively composition are seen as a celebration of life and beauty."}
+        }
+        </script>
+    </body>
+</html>

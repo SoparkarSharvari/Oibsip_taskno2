@@ -1,0 +1,71 @@
+    body{
+        height: max-content;
+        background-image: linear-gradient(to right,black,rgb(46, 46, 46));
+        color: beige;
+    }
+    .mySlides {
+        display:none;
+    }
+    .infoDiv{
+        display: flex;
+        background-color:black; 
+        opacity: 0.5;
+        position: relative;
+        top: -600px;
+        margin-top: 40px;
+    }
+    .infoDiv p{
+        color: rgb(255, 230, 230);
+    }
+    .imageSlide .buttonleft{
+        position: relative;
+        top: -800px;
+        left: -620px;
+        background-color: rgb(105, 104, 104) ;
+        border: none;
+        width: 40px;
+        height: 70px;
+
+    }
+    .imageSlide .buttonright{
+    position: relative;
+    top: -800px;
+    right: -620px;
+    background-color: rgb(105, 104, 104) ;
+        border: none;
+        width: 40px;
+        height: 70px;
+
+    }
+    .introductionDiv{
+        margin: 20px;
+        padding: 20px;
+        display: flex;
+
+    }
+    .introduction{
+        float: left;
+    }
+    .introductionImage{
+        border-radius: 10px;
+        margin-left: 40px;
+        float: left;
+        width: 100%;
+    }
+    p{
+        text-align: justify;
+        font-size: 20px;
+    }
+    #section1{
+        border-radius: 10px;
+        background-image: url('file:///Users/sharvarisoparkar/Downloads/Bouquet-Flowers-oil-Vase-canvas-Vincent-van.webp');
+        height: 300px;
+        overflow-y: scroll;
+    }
+
+    #section2{
+        border-radius: 10px;
+        background-image: url('file:///Users/sharvarisoparkar/Downloads/Signature-Vincent-van-Gogh-letter-end-John-June-17-1888.webp');
+        height: 400px;
+        overflow-y: scroll;
+    }
